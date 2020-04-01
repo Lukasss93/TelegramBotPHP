@@ -2,12 +2,14 @@
 
 namespace TelegramBot\Types;
 
+use TelegramBot\Abstracts\BaseType;
+
 /**
  * Represents an issue with the selfie with a document.
  * The error is considered resolved when the file with the selfie changes.
  * @see https://core.telegram.org/bots/api#passportelementerrorreverseside
  */
-class PassportElementErrorSelfie
+class PassportElementErrorSelfie extends BaseType
 {
     /**
      * @var string $source Error source, must be selfie

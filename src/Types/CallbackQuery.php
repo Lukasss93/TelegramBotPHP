@@ -2,6 +2,8 @@
 
 namespace TelegramBot\Types;
 
+use TelegramBot\Abstracts\BaseType;
+
 /**
  * This object represents an incoming callback query from a callback button
  * in an {@see https://core.telegram.org/bots#inline-keyboards-and-on-the-fly-updating inline keyboard}.
@@ -17,7 +19,7 @@ namespace TelegramBot\Types;
  * even if no notification to the user is needed (e.g., without specifying any of the optional parameters).
  * @see https://core.telegram.org/bots/api#callbackquery
  */
-class CallbackQuery
+class CallbackQuery extends BaseType
 {
     /**
      * Unique identifier for this query

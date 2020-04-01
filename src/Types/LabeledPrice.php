@@ -2,11 +2,13 @@
 
 namespace TelegramBot\Types;
 
+use TelegramBot\Abstracts\BaseType;
+
 /**
  * This object represents a portion of the price for goods or services.
  * @see https://core.telegram.org/bots/api#labeledprice
  */
-class LabeledPrice
+class LabeledPrice extends BaseType
 {
     /**
      * Portion label

@@ -2,11 +2,13 @@
 
 namespace TelegramBot\Types;
 
+use TelegramBot\Abstracts\BaseType;
+
 /**
  * This object represents a point on the map.
  * @see https://core.telegram.org/bots/api#location
  */
-class Location
+class Location extends BaseType
 {
     /**
      * Longitude as defined by sender

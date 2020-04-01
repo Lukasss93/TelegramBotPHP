@@ -2,11 +2,13 @@
 
 namespace TelegramBot\Types;
 
+use TelegramBot\Abstracts\BaseType;
+
 /**
  * This object contains information about one answer option in a poll.
  * @see https://core.telegram.org/bots/api#polloption
  */
-class PollOption
+class PollOption extends BaseType
 {
     /**
      * Option text, 1-100 characters

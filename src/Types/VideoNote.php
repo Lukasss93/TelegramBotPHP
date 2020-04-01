@@ -2,6 +2,7 @@
 
 namespace TelegramBot\Types;
 
+use TelegramBot\Abstracts\BaseType;
 use TelegramBot\Traits\Downloadable;
 
 /**
@@ -10,7 +11,7 @@ use TelegramBot\Traits\Downloadable;
  * @see https://telegram.org/blog/video-messages-and-telescope v.4.0
  * @see https://core.telegram.org/bots/api#videonote
  */
-class VideoNote
+class VideoNote extends BaseType
 {
     use Downloadable;
     

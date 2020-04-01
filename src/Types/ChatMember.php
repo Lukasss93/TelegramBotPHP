@@ -2,11 +2,13 @@
 
 namespace TelegramBot\Types;
 
+use TelegramBot\Abstracts\BaseType;
+
 /**
  * This object contains information about one member of a chat.
  * @see https://core.telegram.org/bots/api#chatmember
  */
-class ChatMember
+class ChatMember extends BaseType
 {
     /**
      * Information about the user

@@ -2,12 +2,14 @@
 
 namespace TelegramBot\Types;
 
+use TelegramBot\Abstracts\BaseType;
+
 /**
  * Represents an issue with the reverse side of a document. The error is considered resolved when the file with reverse
  * side of the document changes. Class PassportElementErrorReverseSide
  * @see https://core.telegram.org/bots/api#passportelementerrorreverseside
  */
-class PassportElementErrorReverseSide
+class PassportElementErrorReverseSide extends BaseType
 {
     /**
      * Error source, must be reverse_side

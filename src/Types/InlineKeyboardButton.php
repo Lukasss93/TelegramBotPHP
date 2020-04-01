@@ -2,11 +2,13 @@
 
 namespace TelegramBot\Types;
 
+use TelegramBot\Abstracts\BaseType;
+
 /**
  * This object represents one button of an inline keyboard. You MUST use exactly one of the optional fields.
  * @see https://core.telegram.org/bots/api#inlinekeyboardbutton
  */
-class InlineKeyboardButton
+class InlineKeyboardButton extends BaseType
 {
     /**
      * Label text on the button

@@ -2,11 +2,13 @@
 
 namespace TelegramBot\Types;
 
+use TelegramBot\Abstracts\BaseType;
+
 /**
  * Represents a link to an article or web page.
  * @see https://core.telegram.org/bots/api#inlinequeryresultarticle
  */
-class InlineQueryResultArticle
+class InlineQueryResultArticle extends BaseType
 {
     /**
      * Type of the result, must be article

@@ -2,6 +2,8 @@
 
 namespace TelegramBot\Types;
 
+use TelegramBot\Abstracts\BaseType;
+
 /**
  * Represents a link to a page containing an embedded video player or a video file.
  * By default, this video file will be sent by the user with an optional caption.
@@ -12,7 +14,7 @@ namespace TelegramBot\Types;
  * you must replace its content using input_message_content.
  * @see https://core.telegram.org/bots/api#inlinequeryresultvideo
  */
-class InlineQueryResultVideo
+class InlineQueryResultVideo extends BaseType
 {
     /**
      * Type of the result, must be video

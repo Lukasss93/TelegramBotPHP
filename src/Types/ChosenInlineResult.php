@@ -2,13 +2,15 @@
 
 namespace TelegramBot\Types;
 
+use TelegramBot\Abstracts\BaseType;
+
 /**
  * Represents a result of an inline query that was chosen by the user and sent to their chat partner.
  * Note: It is necessary to enable {@see https://core.telegram.org/bots/inline#collecting-feedback inline feedback}
  * via {@see https://t.me/botfather @Botfather} in order to receive these objects in updates.
  * @see https://core.telegram.org/bots/api#choseninlineresult
  */
-class ChosenInlineResult
+class ChosenInlineResult extends BaseType
 {
     /**
      * The unique identifier for the result that was chosen

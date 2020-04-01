@@ -2,11 +2,13 @@
 
 namespace TelegramBot\Types;
 
+use TelegramBot\Abstracts\BaseType;
+
 /**
  * Contains information about the current status of a webhook.
  * @see https://core.telegram.org/bots/api#webhookinfo
  */
-class WebhookInfo
+class WebhookInfo extends BaseType
 {
     /**
      * Webhook URL, may be empty if webhook is not set up

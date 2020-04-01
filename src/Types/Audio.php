@@ -2,13 +2,14 @@
 
 namespace TelegramBot\Types;
 
+use TelegramBot\Abstracts\BaseType;
 use TelegramBot\Traits\Downloadable;
 
 /**
  * This object represents an audio file to be treated as music by the Telegram clients.
  * @see https://core.telegram.org/bots/api#audio
  */
-class Audio
+class Audio extends BaseType
 {
     use Downloadable;
     

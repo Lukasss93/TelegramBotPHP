@@ -2,11 +2,13 @@
 
 namespace TelegramBot\Types;
 
+use TelegramBot\Abstracts\BaseType;
+
 /**
  * This object represents information about an order.
  * @see https://core.telegram.org/bots/api#orderinfo
  */
-class OrderInfo
+class OrderInfo extends BaseType
 {
     /**
      * Optional. User name

@@ -2,6 +2,8 @@
 
 namespace TelegramBot\Types;
 
+use TelegramBot\Abstracts\BaseType;
+
 /**
  * Upon receiving a message with this object, Telegram clients will remove
  * the current custom keyboard and display the default letter-keyboard.
@@ -11,7 +13,7 @@ namespace TelegramBot\Types;
  * @see https://core.telegram.org/bots/api#replykeyboardmarkup ReplyKeyboardMarkup
  * @see https://core.telegram.org/bots/api#replykeyboardremove
  */
-class ReplyKeyboardRemove
+class ReplyKeyboardRemove extends BaseType
 {
     /**
      * Required. Requests clients to remove the custom keyboard (user will not be able to summon this keyboard;

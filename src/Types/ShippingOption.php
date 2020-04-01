@@ -2,11 +2,13 @@
 
 namespace TelegramBot\Types;
 
+use TelegramBot\Abstracts\BaseType;
+
 /**
  * This object represents one shipping option.
  * @see https://core.telegram.org/bots/api#shippingoption
  */
-class ShippingOption
+class ShippingOption extends BaseType
 {
     /**
      * Shipping option identifier

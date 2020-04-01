@@ -2,11 +2,13 @@
 
 namespace TelegramBot\Types;
 
+use TelegramBot\Abstracts\BaseType;
+
 /**
  * Represents an audio file to be treated as music to be sent.
  * @see https://core.telegram.org/bots/api#inputmediaaudio
  */
-class InputMediaAudio
+class InputMediaAudio extends BaseType
 {
     /**
      * Type of the result, must be audio

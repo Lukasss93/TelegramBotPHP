@@ -2,12 +2,14 @@
 
 namespace TelegramBot\Types;
 
+use TelegramBot\Abstracts\BaseType;
+
 /**
  * Represents an issue with the front side of a document. The error is considered resolved when the file with the front
  * side of the document changes.
  * @see https://core.telegram.org/bots/api#passportelementerrorfrontside
  */
-class PassportElementErrorFrontSide
+class PassportElementErrorFrontSide extends BaseType
 {
     /**
      * Error source, must be front_side

@@ -2,6 +2,8 @@
 
 namespace TelegramBot\Types;
 
+use TelegramBot\Abstracts\BaseType;
+
 /**
  * Represents a link to a video animation (H.264/MPEG-4 AVC video without sound) stored on the Telegram servers.
  * By default, this animated MPEG-4 file will be sent by the user with an optional caption.
@@ -9,7 +11,7 @@ namespace TelegramBot\Types;
  * animation.
  * @see https://core.telegram.org/bots/api#inlinequeryresultcachedmpeg4gif
  */
-class InlineQueryResultCachedMpeg4Gif
+class InlineQueryResultCachedMpeg4Gif extends BaseType
 {
     /**
      * Type of the result, must be mpeg4_gif

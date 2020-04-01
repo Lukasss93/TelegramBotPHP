@@ -2,11 +2,13 @@
 
 namespace TelegramBot\Types;
 
+use TelegramBot\Abstracts\BaseType;
+
 /**
  * This object represents an answer of a user in a non-anonymous poll.
  * @see https://core.telegram.org/bots/api#pollanswer
  */
-class PollAnswer
+class PollAnswer extends BaseType
 {
     /**
      * Unique poll identifier

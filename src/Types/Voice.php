@@ -2,13 +2,14 @@
 
 namespace TelegramBot\Types;
 
+use TelegramBot\Abstracts\BaseType;
 use TelegramBot\Traits\Downloadable;
 
 /**
  * This object represents a voice note.
  * @see https://core.telegram.org/bots/api#voice
  */
-class Voice
+class Voice extends BaseType
 {
     use Downloadable;
     

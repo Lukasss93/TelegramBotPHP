@@ -2,12 +2,14 @@
 
 namespace TelegramBot\Types;
 
+use TelegramBot\Abstracts\BaseType;
+
 /**
  * This object represents an incoming inline query.
  * When the user sends an empty query, your bot could return some default or trending results.
  * @see https://core.telegram.org/bots/api#inlinequery
  */
-class InlineQuery
+class InlineQuery extends BaseType
 {
     /**
      * Unique identifier for this query

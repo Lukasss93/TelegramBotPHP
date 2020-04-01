@@ -2,6 +2,8 @@
 
 namespace TelegramBot\Types;
 
+use TelegramBot\Abstracts\BaseType;
+
 /**
  * This object represents an
  * {@see https://core.telegram.org/bots#inline-keyboards-and-on-the-fly-updating inline keyboard}
@@ -10,7 +12,7 @@ namespace TelegramBot\Types;
  * Note: This will only work in Telegram versions released after 9 April, 2016. Older clients will display unsupported message.
  * @see https://core.telegram.org/bots/api#inlinekeyboardmarkup
  */
-class InlineKeyboardMarkup
+class InlineKeyboardMarkup extends BaseType
 {
     /**
      * Array of button rows, each represented by an Array of

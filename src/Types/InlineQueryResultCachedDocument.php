@@ -2,6 +2,8 @@
 
 namespace TelegramBot\Types;
 
+use TelegramBot\Abstracts\BaseType;
+
 /**
  * Represents a link to a file stored on the Telegram servers.
  * By default, this file will be sent by the user with an optional caption.
@@ -10,7 +12,7 @@ namespace TelegramBot\Types;
  * Note: This will only work in Telegram versions released after 9 April, 2016. Older clients will ignore them.
  * @see https://core.telegram.org/bots/api#inlinequeryresultcacheddocument
  */
-class InlineQueryResultCachedDocument
+class InlineQueryResultCachedDocument extends BaseType
 {
     /**
      * Type of the result, must be document

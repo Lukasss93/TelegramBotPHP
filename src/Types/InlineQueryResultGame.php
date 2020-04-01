@@ -2,6 +2,8 @@
 
 namespace TelegramBot\Types;
 
+use TelegramBot\Abstracts\BaseType;
+
 /**
  * Represents a Game.
  *
@@ -9,7 +11,7 @@ namespace TelegramBot\Types;
  * Older clients will not display any inline results if a game result is among them.
  * @see https://core.telegram.org/bots/api#inlinequeryresultgame
  */
-class InlineQueryResultGame
+class InlineQueryResultGame extends BaseType
 {
     /**
      * Type of the result, must be game

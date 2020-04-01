@@ -2,6 +2,8 @@
 
 namespace TelegramBot\Types;
 
+use TelegramBot\Abstracts\BaseType;
+
 /**
  * Upon receiving a message with this object, Telegram clients will display a reply interface to the user
  * (act as if the user has selected the bot‘s message and tapped ’Reply').
@@ -25,7 +27,7 @@ namespace TelegramBot\Types;
  * if it only receives replies, commands and mentions — without any extra work for the user.
  * @see https://core.telegram.org/bots/api#forcereply
  */
-class ForceReply
+class ForceReply extends BaseType
 {
     /**
      * Shows reply interface to the user, as if they manually selected the bot‘s message and tapped ’Reply'

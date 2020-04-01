@@ -2,6 +2,7 @@
 
 namespace TelegramBot\Types;
 
+use TelegramBot\Abstracts\BaseType;
 use TelegramBot\Traits\Downloadable;
 
 /**
@@ -10,7 +11,7 @@ use TelegramBot\Traits\Downloadable;
  * @see https://core.telegram.org/bots/api#sticker sticker
  * @see https://core.telegram.org/bots/api#photosize
  */
-class PhotoSize
+class PhotoSize extends BaseType
 {
     use Downloadable;
     

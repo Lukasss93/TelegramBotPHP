@@ -2,6 +2,7 @@
 
 namespace TelegramBot\Types;
 
+use TelegramBot\Abstracts\BaseType;
 use TelegramBot\Constants\UpdateTypes;
 
 /**
@@ -9,7 +10,7 @@ use TelegramBot\Constants\UpdateTypes;
  * At most ONE of the optional parameters can be present in any given update.
  * @see https://core.telegram.org/bots/api#update
  */
-class Update
+class Update extends BaseType
 {
     /**
      * The update‘s unique identifier.

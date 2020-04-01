@@ -2,11 +2,13 @@
 
 namespace TelegramBot\Types;
 
+use TelegramBot\Abstracts\BaseType;
+
 /**
  * This object represents a shipping address.
  * @see https://core.telegram.org/bots/api#shippingaddress
  */
-class ShippingAddress
+class ShippingAddress extends BaseType
 {
     /**
      * ISO 3166-1 alpha-2 country code

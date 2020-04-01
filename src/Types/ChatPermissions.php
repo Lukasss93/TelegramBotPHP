@@ -2,11 +2,13 @@
 
 namespace TelegramBot\Types;
 
+use TelegramBot\Abstracts\BaseType;
+
 /**
  * Describes actions that a non-administrator user is allowed to take in a chat.
  * @see https://core.telegram.org/bots/api#chatpermissions
  */
-class ChatPermissions
+class ChatPermissions extends BaseType
 {
     /**
      * Optional. True, if the user is allowed to send text messages, contacts, locations and venues

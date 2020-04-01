@@ -2,12 +2,14 @@
 
 namespace TelegramBot\Types;
 
+use TelegramBot\Abstracts\BaseType;
+
 /**
  * This object represents a game.
  * Use BotFather to create and edit games, their short names will act as unique identifiers.
  * @see https://core.telegram.org/bots/api#game
  */
-class Game
+class Game extends BaseType
 {
     /**
      * Title of the game

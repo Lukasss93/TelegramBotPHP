@@ -2,6 +2,8 @@
 
 namespace TelegramBot\Types;
 
+use TelegramBot\Abstracts\BaseType;
+
 /**
  * This object represents one button of the reply keyboard.
  * For simple text buttons String can be used instead of this object to specify text of the button.
@@ -11,7 +13,7 @@ namespace TelegramBot\Types;
  * Older clients will ignore them.
  * @see https://core.telegram.org/bots/api#keyboardbutton
  */
-class KeyboardButton
+class KeyboardButton extends BaseType
 {
     /**
      * Text of the button.

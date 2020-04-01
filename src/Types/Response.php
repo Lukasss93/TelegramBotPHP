@@ -2,11 +2,13 @@
 
 namespace TelegramBot\Types;
 
+use TelegramBot\Abstracts\BaseType;
+
 /**
  * Response from an API request
  * @see https://core.telegram.org/bots/api#making-requests
  */
-class Response
+class Response extends BaseType
 {
     /**
      * Response status

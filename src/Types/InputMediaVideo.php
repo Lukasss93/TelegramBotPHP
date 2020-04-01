@@ -2,11 +2,13 @@
 
 namespace TelegramBot\Types;
 
+use TelegramBot\Abstracts\BaseType;
+
 /**
  * Represents a video to be sent.
  * @see https://core.telegram.org/bots/api#inputmediavideo
  */
-class InputMediaVideo
+class InputMediaVideo extends BaseType
 {
     /**
      * Type of the result, must be video

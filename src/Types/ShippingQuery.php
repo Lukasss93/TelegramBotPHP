@@ -2,11 +2,13 @@
 
 namespace TelegramBot\Types;
 
+use TelegramBot\Abstracts\BaseType;
+
 /**
  * This object contains information about an incoming shipping query.
  * @see https://core.telegram.org/bots/api#shippingquery
  */
-class ShippingQuery
+class ShippingQuery extends BaseType
 {
     /**
      * Unique query identifier

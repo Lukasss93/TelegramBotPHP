@@ -2,12 +2,14 @@
 
 namespace TelegramBot\Types;
 
+use TelegramBot\Abstracts\BaseType;
+
 /**
  * Represents the {@see https://core.telegram.org/bots/api#inputmessagecontent content}
  * of a location message to be sent as the result of an inline query.
  * @see https://core.telegram.org/bots/api#inputlocationmessagecontent
  */
-class InputLocationMessageContent
+class InputLocationMessageContent extends BaseType
 {
     /**
      * Latitude of the location in degrees

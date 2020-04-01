@@ -2,6 +2,8 @@
 
 namespace TelegramBot\Types;
 
+use TelegramBot\Abstracts\BaseType;
+
 /**
  * Contains data required for decrypting and authenticating
  * {@see https://core.telegram.org/bots/api#encryptedpassportelement EncryptedPassportElement}.
@@ -9,7 +11,7 @@ namespace TelegramBot\Types;
  * for a complete description of the data decryption and authentication processes.
  * @see https://core.telegram.org/bots/api#encryptedcredentials
  */
-class EncryptedCredentials
+class EncryptedCredentials extends BaseType
 {
     /**
      * Base64-encoded encrypted JSON-serialized data with unique user's payload, data hashes and secrets required for

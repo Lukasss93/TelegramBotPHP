@@ -2,11 +2,13 @@
 
 namespace TelegramBot\Types;
 
+use TelegramBot\Abstracts\BaseType;
+
 /**
  * Represents a photo to be sent.
  * @see https://core.telegram.org/bots/api#inputmediaphoto
  */
-class InputMediaPhoto
+class InputMediaPhoto extends BaseType
 {
     /**
      * Type of the result, must be photo

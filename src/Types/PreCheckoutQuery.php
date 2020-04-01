@@ -2,11 +2,13 @@
 
 namespace TelegramBot\Types;
 
+use TelegramBot\Abstracts\BaseType;
+
 /**
  * This object contains information about an incoming pre-checkout query.
  * @see https://core.telegram.org/bots/api#precheckoutquery
  */
-class PreCheckoutQuery
+class PreCheckoutQuery extends BaseType
 {
     /**
      * Unique query identifier

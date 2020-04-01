@@ -2,13 +2,15 @@
 
 namespace TelegramBot\Types;
 
+use TelegramBot\Abstracts\BaseType;
+
 /**
  * This object represents a custom keyboard with reply options (see Introduction to bots for details and examples).
  * @see https://core.telegram.org/bots#keyboards custom keyboard
  * @see https://core.telegram.org/bots#keyboards Introduction to bots
  * @see https://core.telegram.org/bots/api#replykeyboardmarkup
  */
-class ReplyKeyboardMarkup
+class ReplyKeyboardMarkup extends BaseType
 {
     /**
      * Array of button rows, each represented by an Array of KeyboardButton objects

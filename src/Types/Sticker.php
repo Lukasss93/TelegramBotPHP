@@ -2,13 +2,14 @@
 
 namespace TelegramBot\Types;
 
+use TelegramBot\Abstracts\BaseType;
 use TelegramBot\Traits\Downloadable;
 
 /**
  * This object represents a sticker.
  * @see https://core.telegram.org/bots/api#sticker
  */
-class Sticker
+class Sticker extends BaseType
 {
     use Downloadable;
     

@@ -2,11 +2,13 @@
 
 namespace TelegramBot\Types;
 
+use TelegramBot\Abstracts\BaseType;
+
 /**
  * This object represents a chat.
  * @see https://core.telegram.org/bots/api#chat
  */
-class Chat
+class Chat extends BaseType
 {
     /**
      * Unique identifier for this chat.

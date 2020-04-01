@@ -2,6 +2,8 @@
 
 namespace TelegramBot\Types;
 
+use TelegramBot\Abstracts\BaseType;
+
 /**
  * Represents a link to a voice recording in an .ogg container encoded with OPUS.
  * By default, this voice recording will be sent by the user.
@@ -11,7 +13,7 @@ namespace TelegramBot\Types;
  * Note: This will only work in Telegram versions released after 9 April, 2016. Older clients will ignore them.
  * @see https://core.telegram.org/bots/api#inlinequeryresultvoice
  */
-class InlineQueryResultVoice
+class InlineQueryResultVoice extends BaseType
 {
     /**
      * Type of the result, must be voice

@@ -2,11 +2,13 @@
 
 namespace TelegramBot\Types;
 
+use TelegramBot\Abstracts\BaseType;
+
 /**
  * This object represents a Telegram user or bot.
  * @see https://core.telegram.org/bots/api#user
  */
-class User
+class User extends BaseType
 {
     /**
      * Unique identifier for this user or bot

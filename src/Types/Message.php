@@ -2,13 +2,14 @@
 
 namespace TelegramBot\Types;
 
+use TelegramBot\Abstracts\BaseType;
 use TelegramBot\Constants\MessageTypes;
 
 /**
  * This object represents a message.
  * @see https://core.telegram.org/bots/api#message
  */
-class Message
+class Message extends BaseType
 {
     /**
      * Unique message identifier inside this chat

@@ -2,11 +2,13 @@
 
 namespace TelegramBot\Types;
 
+use TelegramBot\Abstracts\BaseType;
+
 /**
  * Represents an animation file (GIF or H.264/MPEG-4 AVC video without sound) to be sent.
  * @see https://core.telegram.org/bots/api#inputmediaanimation
  */
-class InputMediaAnimation
+class InputMediaAnimation extends BaseType
 {
     /**
      * Type of the result, must be animation

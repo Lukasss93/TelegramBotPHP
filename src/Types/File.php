@@ -2,6 +2,8 @@
 
 namespace TelegramBot\Types;
 
+use TelegramBot\Abstracts\BaseType;
+
 /**
  * This object represents a file ready to be downloaded.
  * The file can be downloaded via the link https://api.telegram.org/file/bot<token>/<file_path>.
@@ -10,7 +12,7 @@ namespace TelegramBot\Types;
  * Maximum file size to download is 20 MB
  * @see https://core.telegram.org/bots/api#file
  */
-class File
+class File extends BaseType
 {
     /**
      * Identifier for this file

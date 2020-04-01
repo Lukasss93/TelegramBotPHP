@@ -2,11 +2,13 @@
 
 namespace TelegramBot\Types;
 
+use TelegramBot\Abstracts\BaseType;
+
 /**
  * This object represents a phone contact.
  * @see https://core.telegram.org/bots/api#contact
  */
-class Contact
+class Contact extends BaseType
 {
     /**
      * Contact's phone number

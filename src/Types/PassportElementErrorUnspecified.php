@@ -2,12 +2,14 @@
 
 namespace TelegramBot\Types;
 
+use TelegramBot\Abstracts\BaseType;
+
 /**
  * Represents an issue in an unspecified place.
  * The error is considered resolved when new data is added.
  * @see https://core.telegram.org/bots/api#passportelementerrorunspecified
  */
-class PassportElementErrorUnspecified
+class PassportElementErrorUnspecified extends BaseType
 {
     /**
      * Error source, must be unspecified

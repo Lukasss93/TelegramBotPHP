@@ -2,11 +2,13 @@
 
 namespace TelegramBot\Types;
 
+use TelegramBot\Abstracts\BaseType;
+
 /**
  * This object represents one special entity in a text message. For example, hashtags, usernames, URLs, etc.
  * @see https://core.telegram.org/bots/api#messageentity
  */
-class MessageEntity
+class MessageEntity extends BaseType
 {
     /**
      * Type of the entity. Can be mention ([at]username), hashtag, bot_command, url, email, bold (bold text),

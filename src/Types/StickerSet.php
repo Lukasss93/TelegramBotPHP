@@ -2,11 +2,13 @@
 
 namespace TelegramBot\Types;
 
+use TelegramBot\Abstracts\BaseType;
+
 /**
  * This object represents a sticker.
  * @see https://core.telegram.org/bots/api#stickerset
  */
-class StickerSet
+class StickerSet extends BaseType
 {
     /**
      * Sticker set name

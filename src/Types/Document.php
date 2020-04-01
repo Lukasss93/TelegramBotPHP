@@ -2,6 +2,7 @@
 
 namespace TelegramBot\Types;
 
+use TelegramBot\Abstracts\BaseType;
 use TelegramBot\Traits\Downloadable;
 
 /**
@@ -11,7 +12,7 @@ use TelegramBot\Traits\Downloadable;
  * {@see https://core.telegram.org/bots/api#audio audio files}).
  * @see https://core.telegram.org/bots/api#document
  */
-class Document
+class Document extends BaseType
 {
     use Downloadable;
     

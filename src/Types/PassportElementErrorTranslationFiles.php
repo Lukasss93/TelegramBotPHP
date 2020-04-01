@@ -2,12 +2,14 @@
 
 namespace TelegramBot\Types;
 
+use TelegramBot\Abstracts\BaseType;
+
 /**
  * Represents an issue with one of the files that constitute the translation of a document.
  * The error is considered resolved when the file changes.
  * @see https://core.telegram.org/bots/api#passportelementerrortranslationfiles
  */
-class PassportElementErrorTranslationFiles
+class PassportElementErrorTranslationFiles extends BaseType
 {
     /**
      * Error source, must be translation_files

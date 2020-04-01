@@ -2,13 +2,14 @@
 
 namespace TelegramBot\Types;
 
+use TelegramBot\Abstracts\BaseType;
 use TelegramBot\Traits\Downloadable;
 
 /**
  * This object represents an animation file (GIF or H.264/MPEG-4 AVC video without sound).
  * @see https://core.telegram.org/bots/api#animation
  */
-class Animation
+class Animation extends BaseType
 {
     use Downloadable;
     

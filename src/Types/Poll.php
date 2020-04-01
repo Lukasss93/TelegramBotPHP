@@ -2,11 +2,13 @@
 
 namespace TelegramBot\Types;
 
+use TelegramBot\Abstracts\BaseType;
+
 /**
  * This object contains information about a poll.
  * @see https://core.telegram.org/bots/api#poll
  */
-class Poll
+class Poll extends BaseType
 {
     /**
      * Unique poll identifier

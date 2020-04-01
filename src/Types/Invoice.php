@@ -2,11 +2,13 @@
 
 namespace TelegramBot\Types;
 
+use TelegramBot\Abstracts\BaseType;
+
 /**
  * This object contains basic information about an invoice.
  * @see https://core.telegram.org/bots/api#invoice
  */
-class Invoice
+class Invoice extends BaseType
 {
     /**
      * Product name

@@ -2,11 +2,13 @@
 
 namespace TelegramBot\Types;
 
+use TelegramBot\Abstracts\BaseType;
+
 /**
  * This object represents a venue.
  * @see https://core.telegram.org/bots/api#venue
  */
-class Venue
+class Venue extends BaseType
 {
     /**
      * Venue location

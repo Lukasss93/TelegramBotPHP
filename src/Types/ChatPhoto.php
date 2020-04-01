@@ -2,11 +2,13 @@
 
 namespace TelegramBot\Types;
 
+use TelegramBot\Abstracts\BaseType;
+
 /**
  * This object represents a chat photo.
  * @see https://core.telegram.org/bots/api#chatphoto
  */
-class ChatPhoto
+class ChatPhoto extends BaseType
 {
     /**
      * File identifier of small (160x160) chat photo.

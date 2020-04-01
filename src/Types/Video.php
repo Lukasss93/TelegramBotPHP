@@ -2,13 +2,14 @@
 
 namespace TelegramBot\Types;
 
+use TelegramBot\Abstracts\BaseType;
 use TelegramBot\Traits\Downloadable;
 
 /**
  * This object represents a video file.
  * @see https://core.telegram.org/bots/api#video
  */
-class Video
+class Video extends BaseType
 {
     use Downloadable;
     
