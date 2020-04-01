@@ -2,12 +2,16 @@
 
 namespace TelegramBot\Types;
 
+use TelegramBot\Traits\Downloadable;
+
 /**
  * This object represents a video file.
  * @see https://core.telegram.org/bots/api#video
  */
 class Video
 {
+    use Downloadable;
+    
     /**
      * Identifier for this file
      * @var string $file_id

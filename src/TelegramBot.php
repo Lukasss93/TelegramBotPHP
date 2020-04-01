@@ -37,7 +37,7 @@ class TelegramBot
     public $updatesData;
     
     /** @var string Bot token */
-    private $token;
+    protected $token;
     
     /** @var JsonMapper */
     private $mapper;

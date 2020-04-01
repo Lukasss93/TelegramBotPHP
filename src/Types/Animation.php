@@ -2,12 +2,16 @@
 
 namespace TelegramBot\Types;
 
+use TelegramBot\Traits\Downloadable;
+
 /**
  * This object represents an animation file (GIF or H.264/MPEG-4 AVC video without sound).
  * @see https://core.telegram.org/bots/api#animation
  */
 class Animation
 {
+    use Downloadable;
+    
     /**
      * Identifier for this file
      * @var string $file_id

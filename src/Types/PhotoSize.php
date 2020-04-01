@@ -2,6 +2,8 @@
 
 namespace TelegramBot\Types;
 
+use TelegramBot\Traits\Downloadable;
+
 /**
  * This object represents one size of a photo or a file / sticker thumbnail.
  * @see https://core.telegram.org/bots/api#document file
@@ -10,6 +12,8 @@ namespace TelegramBot\Types;
  */
 class PhotoSize
 {
+    use Downloadable;
+    
     /**
      * Unique identifier for this file
      * @var string $file_id

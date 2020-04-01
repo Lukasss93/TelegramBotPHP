@@ -2,6 +2,8 @@
 
 namespace TelegramBot\Types;
 
+use TelegramBot\Traits\Downloadable;
+
 /**
  * This object represents a general file (as opposed to
  * {@see https://core.telegram.org/bots/api#photosize photos},
@@ -11,6 +13,8 @@ namespace TelegramBot\Types;
  */
 class Document
 {
+    use Downloadable;
+    
     /**
      * Identifier for this file
      * @var string $file_id

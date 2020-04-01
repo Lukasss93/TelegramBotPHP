@@ -2,6 +2,8 @@
 
 namespace TelegramBot\Types;
 
+use TelegramBot\Traits\Downloadable;
+
 /**
  * This object represents a video message (available in Telegram apps as of v.4.0).
  * @see https://telegram.org/blog/video-messages-and-telescope video message
@@ -10,6 +12,8 @@ namespace TelegramBot\Types;
  */
 class VideoNote
 {
+    use Downloadable;
+    
     /**
      * Identifier for this file
      * @var string $file_id

@@ -2,12 +2,16 @@
 
 namespace TelegramBot\Types;
 
+use TelegramBot\Traits\Downloadable;
+
 /**
  * This object represents a sticker.
  * @see https://core.telegram.org/bots/api#sticker
  */
 class Sticker
 {
+    use Downloadable;
+    
     /**
      * Identifier for this file
      * @var string $file_id

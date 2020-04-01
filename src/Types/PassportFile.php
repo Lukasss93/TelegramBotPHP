@@ -2,6 +2,8 @@
 
 namespace TelegramBot\Types;
 
+use TelegramBot\Traits\Downloadable;
+
 /**
  * This object represents a file uploaded to Telegram Passport.
  * Currently all Telegram Passport files are in JPEG format when decrypted and don't exceed 10MB.
@@ -9,6 +11,8 @@ namespace TelegramBot\Types;
  */
 class PassportFile
 {
+    use Downloadable;
+    
     /**
      * Unique identifier for this file
      * @var string $file_id
