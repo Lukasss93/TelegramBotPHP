@@ -21,8 +21,11 @@
     "autoload": {
         "psr-4": {
             "TelegramBot\\": "src/",
-            "TelegramBot\\Types\\": "src/Types/",
-            "TelegramBot\\Constants\\": "src/Constants/"
+            "TelegramBot\\Abstracts\\": "src/Abstracts/",
+            "TelegramBot\\Constants\\": "src/Constants/",
+            "TelegramBot\\Methods\\": "src/Methods/",
+            "TelegramBot\\Traits\\": "src/Traits/",
+            "TelegramBot\\Types\\": "src/Types/"
         },
         "files": [
             "src/TelegramHelper.php"

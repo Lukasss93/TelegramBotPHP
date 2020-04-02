@@ -2,6 +2,8 @@
 
 namespace TelegramBot\Types;
 
+use Exception;
+use JsonMapper;
 use TelegramBot\Abstracts\BaseType;
 
 /**
@@ -30,7 +32,7 @@ class Response extends BaseType
     
     /**
      * Result data
-     * @var object $result
+     * @var array $result
      */
     public $result;
     
@@ -39,4 +41,40 @@ class Response extends BaseType
      * @var ResponseParameters $parameters
      */
     public $parameters;
+    
+    /**
+     * Get the result data
+     * @param  string  $key
+     * @return mixed
+     */
+    public function getResult($key = null)
+    {
+        if ($key !== null) {
+            $this->result[$key];
+        }
+        
+        return $this->result;
+    }
+    
+    /**
+     * Get the result data as an Object or Object Array
+     * @param $class
+     * @param  bool  $isArray
+     * @return mixed
+     */
+    public function getResultAs($class, $isArray = false)
+    {
+        $mapper = new JsonMapper();
+        $mapper->bStrictNullTypes = false;
+        
+        try {
+            if ($isArray) {
+                return $mapper->mapArray($this->result, [], $class);
+            }
+            
+            return $mapper->map((object)$this->result, new $class());
+        } catch (Exception $e) {
+            return (object)$this->result;
+        }
+    }
 }
