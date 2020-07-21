@@ -82,6 +82,12 @@ class Message extends BaseType
     public $reply_to_message;
     
     /**
+     * Optional. Bot through which the message was sent
+     * @var User $via_bot
+     */
+    public $via_bot;
+    
+    /**
      * Optional. Date the message was last edited in Unix time
      * @var int $edit_date
      */
@@ -346,7 +352,7 @@ class Message extends BaseType
      * OUT: /hello
      * @return string
      */
-    public function getCommand(): string
+    public function getCommand(): ?string
     {
         if ($this->text !== null) {
             $result = preg_match('/^(\/\w+)(@\w+)?(.+)?$/', $this->text, $matches);

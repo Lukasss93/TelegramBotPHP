@@ -1,6 +1,6 @@
 # TelegramBot-PHP
 
-[![API](https://img.shields.io/badge/Telegram%20Bot%20API-4.7%20--%20March%2030%2C%202020-blue.svg)](https://core.telegram.org/bots/api)
+[![API](https://img.shields.io/badge/Telegram%20Bot%20API-4.9%20--%20June%204%2C%202020-blue.svg)](https://core.telegram.org/bots/api)
 ![PHP](https://img.shields.io/badge/php-%3E%3D7.2-8892bf.svg)
 ![CURL](https://img.shields.io/badge/cURL-required-green.svg)
 
@@ -227,7 +227,6 @@ Changelog
 All notable changes to this project will be documented [here](https://github.com/Lukasss93/telegrambot-php/blob/master/CHANGELOG.md).
 
 ### Recent changes
-## [1.7.1] - 2020-03-31
+## [1.9] - 2020-06-05
 ### Changed
-- Updated to Telegram Bot API 4.7
-- Improved PHPDocs
+- Updated to Telegram Bot API 4.9

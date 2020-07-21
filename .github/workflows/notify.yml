@@ -1,0 +1,18 @@
+name: Notify
+on:
+    push:
+        branches:
+            - master
+    release:
+        types: [published]
+
+jobs:
+    notify:
+        name: Notify via Telegram
+        runs-on: ubuntu-latest
+        steps:
+            - name: Send message to Telegram
+              uses: Lukasss93/telegram-action@v1.1
+              env:
+                  TELEGRAM_TOKEN: ${{ secrets.telegram_token }}
+                  TELEGRAM_CHAT: ${{ secrets.telegram_chat }}
